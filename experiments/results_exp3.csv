@@ -1,0 +1,17 @@
+experiment,method,n,k,runs,avg_ms,avg_comparisons,avg_moves
+delete,array,1000,,500,0.045013,392.51,357.99
+delete,bst_linked_list,1000,,500,0.001815,11.56,0.0
+queue,array_queue,1000,,1000,0.000246,0.0,499.5
+queue,linked_queue,1000,,1000,0.000266,0.0,0.0
+delete,array,10000,,1000,0.972577,4792.11,4708.39
+delete,bst_linked_list,10000,,1000,0.00194,16.42,0.0
+queue,array_queue,10000,,1000,0.000972,0.0,9499.5
+queue,linked_queue,10000,,1000,0.000189,0.0,0.0
+delete,array,50000,,356,8.421479,24728.12,25094.38
+delete,bst_linked_list,50000,,1000,0.003204,19.6,0.0
+queue,array_queue,50000,,1000,0.005107,0.0,49499.5
+queue,linked_queue,50000,,1000,0.000351,0.0,0.0
+delete,array,106982,,170,17.710955,55652.74,51244.76
+delete,bst_linked_list,106982,,1000,0.003186,20.79,0.0
+queue,array_queue,106982,,1000,0.012602,0.0,106481.5
+queue,linked_queue,106982,,1000,0.000259,0.0,0.0
