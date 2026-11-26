@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "啟動門診系統",
+            "detail": "啟動 Streamlit 並在 VS Code 內建瀏覽器開啟 http://localhost:8501",
+            "dependsOn": "門診系統：Streamlit 伺服器",
+            "type": "process",
+            "command": "cmd",
+            "args": ["/c", "echo ${input:openNoshowBrowser}"],
+            "presentation": { "reveal": "never", "close": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "門診系統：Streamlit 伺服器",
+            "type": "process",
+            "command": "python",
+            "args": [
+                "-m", "streamlit", "run", "app/Home.py",
+                "--server.headless", "true",
+                "--server.port", "8501"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": true,
+            "presentation": { "reveal": "always", "panel": "dedicated" },
+            "problemMatcher": {
+                "owner": "streamlit",
+                "pattern": { "regexp": "^__never_match__$" },
+                "background": {
+                    "activeBegin": true,
+                    "beginsPattern": "Streamlit|streamlit",
+                    "endsPattern": "Local URL"
+                }
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "openNoshowBrowser",
+            "type": "command",
+            "command": "simpleBrowser.show",
+            "args": "http://localhost:8501"
+        }
+    ]
+}

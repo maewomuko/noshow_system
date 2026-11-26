@@ -1,0 +1,12 @@
+# 深色科技風主題：與簡報共用色票（.claude/skills/noshow-dev/SKILL.md 6.1）
+[theme]
+base = "dark"
+primaryColor = "#36B6AC"
+backgroundColor = "#101C2C"
+secondaryBackgroundColor = "#1B2D43"
+textColor = "#E8EDF4"
+redColor = "#D94B4B"
+yellowColor = "#D9A441"
+greenColor = "#3FA35B"
+linkColor = "#36B6AC"
+chartCategoricalColors = ["#36B6AC", "#8FA8C4", "#D9A441", "#D94B4B", "#3FA35B", "#9C8CF0"]

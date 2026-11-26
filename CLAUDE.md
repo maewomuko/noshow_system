@@ -56,3 +56,4 @@
 - 重播 log 必須呼叫 AppointmentSystem 本身的方法，不可直接改結構或 CSV
 - 實驗必須建立新的結構實例，不可使用 Streamlit session_state 裡的系統
 - 每完成一個任務都要跑 python -m pytest tests -q，全部通過才算完成
+## 手動修改紀錄（使用者親自改的，不要重做或覆蓋）

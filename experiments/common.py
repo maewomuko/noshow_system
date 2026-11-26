@@ -105,8 +105,8 @@ def print_rows(rows):
 def run_and_save(run_fn, filename, title):
     """載入資料 → 執行實驗 → 存 CSV → 印出結果（給各實驗的 main 用）。"""
     print(f"== {title} ==")
-    records = load_records()
-    rows = run_fn(records)
+    records = load_records() #固訂seed 每次抽到的都不一樣
+    rows = run_fn(records)   #從 106,982 筆裡隨機抽 n 筆，回傳一個 list
     path = write_csv(rows, filename)
     print_rows(rows)
     print(f"  → 已存到 {path}")
